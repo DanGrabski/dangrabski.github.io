@@ -2,27 +2,337 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peter Boothe - Résumé</title>
-  <style>
-      body {
-          font-family: Arial, sans-serif;
-          line-height: 1.6;
-          color: #333;
-          max-width: 800px;
-          margin: 0 auto;
-          padding: 20px;
-      }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan Grabski - Résumé</title>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #0c546e;
+        }
+
+        h2 {
+            color: #1a789b
+        }
+
+        h3 {
+            color: #2ba3cf
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .job {
+            margin-bottom: 15px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 10px;
+        }
+
+        .job-company,
+        .job-title {
+            font-weight: bold;
+            flex: 1;
+        }
+
+        .job-title {
+            text-align: center;
+        }
+
+        .job-date {
+            text-align: right;
+            flex: 1;
+        }
+
+        .job-details {
+            font-style: italic;
+        }
+
+        .profile-picture {
+            float: right;
+            width: 150px;
+            height: auto;
+            border-radius: 3px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        header {
+            overflow: hidden;
+        }
+        .goal-section {
+            text-align: center;
+            margin-bottom: 2em;
+            position: relative;
+        }
+
+        .goal {
+            font-size: larger;
+            color: #5A86A2;
+            margin: 1em 0;
+            padding-right: 170px;
+        }
+
+        .company-logo {
+            width: 40px;
+            /* Adjust size to match your profile picture */
+            height: 40px;
+            /* Ensure height matches width for a square logo */
+            margin-right: 10px;
+            /* Space between logo and text */
+            vertical-align: middle;
+            /* Align with text */
+        }
+
+        dl {
+            margin-left: 20px;
+        }
+
+        dt {
+            font-weight: bold;
+            float: left;
+            clear: left;
+            width: 120px;
+        }
+
+        dd {
+            margin-left: 135px;
+            margin-bottom: 10px;
+        }
+
+        dl::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
     </style>
 </head>
 
 <body>
     <header>
+        <img src="DanGrabski-picture.jpg" alt="Dan Grabski" class="profile-picture">
         <h1>Dan Grabski</h1>
+        <dl>
+            <dt>Location</dt>
+            <dd>Portland, Oregon, USA
+                <br>
+                    Not relocating at this time. Available for occasional travel.
+            </dd>
+
+            <dt>Email</dt>
+            <dd><a href="mailto:dgrabski&#64;gmail.com">dgrabski&#64;gmail.com</a>
+            </dd>
+        </dl>
     </header>
 
-  <main></main>
+    <main>
+        <div class="section goal-section">
+            <p class="goal">
+		I like building software for mission-critical services, and giving other engineers the space and tools
+                to do great work. I specialize in communicating across teams and clients, and turning data into
+                actionable insights.
+        </div>
+
+        <section class="section">
+            <h2>Experience</h2>
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-company">
+                            <img src="Apex.jpg" alt="x Logo" class="company-logo">
+                            <a href="https://apexfintechsolutions.com/">Apex Fintech Solutions</a>
+                        </span>
+                        <span class="job-title">Software Engineer</span>
+                        <span class="job-date">2020-2025</span>
+                    </div>
+                    <p>
+                        Feature captain (tech lead) for an international team of engineers, responsible for both greenfield
+                        and brownfield development of core financial services in the fintech industry, powering APIs
+                        used by countless financial institutions. Implemented services in a microservice architecture.
+
+                        Mentored junior engineers, and ran a training program in technical writing for all levels of
+                        software engineers in multiple locations.
+
+                        Instrumented multiple services for monitoring, alerting, and performance analysis.
+                    </p>
+                    <p>
+                        Created a new document lifecycle management system for developer documentation, implementing
+                        automatic processes to update documentation based on code changes. Maintained the
+                        <a href="https://apexfintechsolutions.com/developers/developer-portal/">Apex developer portal</a>,
+                        and created continuous improvements to the client experience, including pre-sales provisioning.
+
+                    </p>
+                    <dl>
+                        <dt>Languages</dt>
+                        <dd>Java, Python, Go, Typescript, Shell</dd>
+                        <dt>Technologies and Skills</dt>
+                        <dd>microservices, gRPC, RabbitMQ, Datadog, Grafana, Docker, Kubernetes, Bazel, PostgresQL,
+                            MongoDB, Bigquery, GCP, AI, prompt engineering, developer documentation, technical writing
+                            OpenAPI</dd>
+                    </dl>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-company">
+                            <img src="PCC.jpg" alt="x Logo" class="company-logo">
+                            <a href="https://www.precast.com/">Precision Castparts</a>
+                        </span>
+                        <span class="job-title">Software Engineer</span>
+                        <span class="job-date">2018-2020</span>
+                    </div>
+                    <p>
+                        Maintained and improved process control and monitoring software in Java and Python for several
+                        industrial plants. Incorporated SQL database storage to existing plant control software, for
+                        future analysis and to ensure aerospace industry regulatory compliance and local environmental
+                        regulations. Participated in aerospace industry regulatory compliance reviews.
+                        Converted existing RMB/HP-UX control software into Python. Processed helpdesk tickets from the
+                        factory floor and created bug fixes, software improvements, and new software projects based on
+                        requests. Analyzed root cause of failure for software, controls, and automation failures.
+                    </p>
+                    <dl>
+                        <dt>Languages</dt>
+                        <dd>Python, Java</dd>
+                        <dt>Technologies and Skills</dt>
+                        <dd>Ignition, industrial automation, regulatory compliance, SQL</dd>
+                    </dl>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-company">
+                            <img src="DWFritz.jpg" alt="x Logo" class="company-logo">
+                            <a href="https://dwfritz.com/">DWFritz Automation</a>
+                        </span>
+                        <span class="job-title">Controls Software Engineer</span>
+                        <span class="job-date">2015-2017</span>
+                    </div>
+                    <p>
+                        Team lead for one of the company’s major product lines, with a team of 3 to 5 software
+                        engineers. Wrote software in C#/.NET for PC-based control of automated high-speed, high-precision
+                        part inspection systems, capable of handling hundreds of parts per minute, while measuring over
+                        a hundred dimensions on each part to micron-level accuracy. Developed data analysis modules used
+                        to process measurement data trends, used in multiple software projects in the company.
+                    </p>
+                    <dl>
+                        <dt>Languages</dt>
+                        <dd>C#</dd>
+                        <dt>Technologies and Skills</dt>
+                        <dd>.NET framework, metrology, robotics, data analysis</dd>
+                    </dl>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-company">
+                            <img src="EMI.jpg" alt="x Logo" class="company-logo">
+                            <a href="https://www.rhfs.com/emi-vocus.html">EMI (now part of Ryan Herco)</a>
+                        </span>
+                        <span class="job-title">Systems Engineer</span>
+                        <span class="job-date">2010-2015</span>
+                    </div>
+                    <p>
+                        Designed mechanical systems, controls hardware, and control software for fully automated
+                        semiconductor plant fluid handling systems. Spearheaded effort to obtain Underwriters Laboratories
+                        certification for our electrical and controls department, achieving UL508 listing for our
+                        company. Responsible for ongoing regulatory compliance with Underwriters Laboratories, including
+                        quarterly inspections and reviews. Designed systems to comply with SEMI standards and Underwriters
+                        Laboratories standards.
+
+                        Responsible for system quotes for systems up to $1.5 million, including development and NRE
+                        costing and production costs. Wrote operational and technical manuals for all systems. Complete
+                        system-level responsibility to multiple customers for system support. Wrote software productivity
+                        tools used across multiple departments.
+                    </p>
+                    <dl>
+                        <dt>Technologies and Skills</dt>
+                        <dd>controls software engineering, systems engineering, regulatory compliance, industry
+                            standard compliance, Perl, VBA, technical writing, documentation</dd>
+                    </dl>
+                </div>
+        </section>
+
+        <section class="section">
+            <h2>Presentations</h2>
+            <dl>
+                <dt>Write The Docs 2023</dt>
+                <dd>
+                    <a href="https://youtu.be/UHVAKNdvihE?si=szpNtMj8UbIqGm2z">
+                        Zen And The Art Of Automanually Creating API Documentation - An Inquiry Into Process
+                    </a>
+                    <p>An exploration into process improvements around generating developer documentation and dev
+                        portals, using an incremental approach and an understanding of greater process constraints.</p>
+                </dd>
+            </dl>
+        </section>
+
+        <section class="section">
+            <h2>Motorsports History</h2>
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-company">
+                            Andretti Green Racing (now Andretti Autosport)
+                        </span>
+                        <span class="job-title">Engineer - Indycar</span>
+                        <span class="job-date">2006-2009</span>
+                    </div>
+                    <div class="job-header">
+                        <span class="job-company">
+                            Fernandez Racing
+                        </span>
+                        <span class="job-title">Engineer - Champcar, Indycar</span>
+                        <span class="job-date">2002-2005</span>
+                    </div>
+                    <p>
+                        Fuel strategist for Danica Patrick's Indycar win in Japan in 2008, finishing the race with less
+                        than a lap of fuel left. Implemented simulation programs and systems for race simulation, leading
+                        to an Indy 500 win in 2008. Responsible for data analysis in high pressure situations during
+                        race weekends. Created simulation models, developed test strategies, and analyzed racecar data
+                        along with setup options to direct on-track testing and changes.
+                    </p>
+                </div>
+        </section>
+
+        <section class="section">
+            <h2>Outside Interests and Experience</h2>
+            <dl>
+                <dt>Amateur Rocketry</dt>
+                <dd>TRA Level 2 high power rocketry certification.
+                    Most recent project flew to 10,000ft AGL at Mach 1.7.
+                    Current project is designed to fly faster than Mach 2, with
+                    integrated electronics, including GPS tracking and telemetry, onboard camera,
+                    and integrated flight computers for recovery system deployment.
+                </dd>
+
+                <dt>Black Rock Rangers</dt>
+                <dd>Mentor, Trainer, and Troubleshooter with the Black Rock Rangers, providing peer support,
+                    conflict resolution, and crisis support at Burning Man.
+                </dd>
+
+                <dt>Correspondence Chess</dt>
+                <dd>Correspondence Chess Master (CCM) titled player with the International Correspondence
+                    Chess Federation. Qualifier for semifinals of the World Zone individual championship.
+                </dd>
+            </dl>
+        </section>
+
+    </main>
+
+
 
 </body>
 
